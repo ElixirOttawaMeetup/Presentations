@@ -1,0 +1,10 @@
+version: "3"
+services:
+    event-store:
+        image: eventstore/eventstore:release-4.0.0-rc1
+        ports:
+            - "2113:2113"
+        environment:
+            EVENTSTORE_RUN_PROJECTIONS: All
+            EVENTSTORE_START_STANDARD_PROJECTIONS: "True"
+        restart: always
