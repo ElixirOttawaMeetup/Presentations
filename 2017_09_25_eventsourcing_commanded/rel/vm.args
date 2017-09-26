@@ -1,0 +1,2 @@
+-sname ${NODE_NAME}
+-setcookie ${NODE_COOKIE}
